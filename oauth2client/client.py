@@ -2072,7 +2072,7 @@ class OAuth2WebServerFlow(Flow):
                 id_token_jwt = d['id_token']
 
             logger.info('Successfully retrieved access token')
-            logger.info('data received: ' + d)
+            logger.info(d)
             return OAuth2Credentials(
                 access_token, self.client_id, self.client_secret,
                 refresh_token, token_expiry, self.token_uri, self.user_agent,
